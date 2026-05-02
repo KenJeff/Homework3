@@ -32,7 +32,7 @@ const students = [
 ];
 
 // 1. Using forEach print each students name
-// students.forEach((student) => console.log(student.name));
+students.forEach((student) => console.log(student.name));
 
 /* 2.
  Create a function that:
@@ -76,11 +76,12 @@ the keys "averageGrade" and "letterGrade" so the final object should look someth
 students.map(student => student.averageGrade = averageGrade(student.grades)[0] )
 students.map(student => student.letterGrade = averageGrade(student.grades)[1] )
 
+console.log("Updated student array")
 console.log(students)
-console.log("/////////////////////////////////////////")
 
 // 4. Use filter to create a new array call topStudents for students who are enrolled and
 // average grade is 80 or higher
 // write code for #4 here
 const topStudents = students.filter((student) => student.averageGrade >= 80 && student.isEnrolled)
+console.log("Array of top students")
 console.log(topStudents)
